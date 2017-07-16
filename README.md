@@ -26,7 +26,7 @@ Breaks:
 
 ### Instructor's Resources
 
-- [DevelopIntelligence](http://www.developintelligence.com/)
+- [Accelebrate](http://www.accelebrate.com/)
 - [Eric's Blog](http://t4d.io/)
 - [WintellectNOW](https://www.wintellectnow.com/Home/Instructor?instructorId=EricGreene) - Special Offer Code: GREENE-2016
 - [Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=Eric%20Greene&lang=1033)
