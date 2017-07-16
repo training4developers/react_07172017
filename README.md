@@ -8,19 +8,17 @@ Eric Greene - [http://t4d.io](http://t4d.io) - [LinkedIn](https://www.linkedin.c
 
 Class:
 
-- Wednesday - Thursday, 9:00am to 5:00pm PDT
+- Monday - Friday, Noon to 4:30pm EDT
+- Thursday: Noon to 1:45pm, 3:15pm to 4:30pm EDT
 
 Breaks:
 
-- Morning: 10:25am to 10:35am
-- Lunch: Noon to 1pm
-- Afternoon #1: 2:15pm to 2:25pm
-- Afternoon #2: 3:40pm to 3:50pm
+- First: 1:25pm to 1:35pm
+- Second: 3:00pm to 3:10pm
 
 ## Course Outline
 
-- Wednesday: Components, JSX, Props, State, Composition
-- Thursday: Pure Components, Stateless Functions, PropTypes, LifeCycle
+- See Course Outline
 
 ## Links
 
