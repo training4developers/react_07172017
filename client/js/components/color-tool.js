@@ -4,15 +4,22 @@ export class ColorTool extends React.Component {
 
   render() {
 
-    const colors = ['red','green','yellow','blue'];
+    //this.props.colors.push('purple');
 
-    // return React.createElement('h1', null, 'Color Tool');
+    //this.props.newProp = 'new value';
+
+    // Object.preventExtensions(obj);
+    // Object.seal(obj);
+    // Object.freeze(obj);
+
+    //console.log(Object.isFrozen(this.props));
+
     return <div>
       <header>
         <h1>Color Tool</h1>
       </header>
       <ul>
-        {colors.map(color => <li>{color}</li>)}
+        {this.props.colors.map(color => <li>{color}</li>)}
       </ul>
     </div>;
   }
