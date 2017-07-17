@@ -21,8 +21,6 @@ export class ColorTool extends React.Component {
 
   render() {
 
-    console.log('render');
-
     return <div>
       <header>
         <h1>Color Tool</h1>

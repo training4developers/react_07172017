@@ -1,0 +1,6 @@
+Exercise 4
+
+1. Move the array of car objects out of car tool.
+
+2. Pass the array of cars into Car Tool via props.
+

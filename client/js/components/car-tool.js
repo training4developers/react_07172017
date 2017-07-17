@@ -2,7 +2,9 @@ import React from 'react';
 
 export class CarTool extends React.Component {
 
+
   render() {
+
     return <div>
       <header>
         <h1>Car Tool</h1>
@@ -18,13 +20,13 @@ export class CarTool extends React.Component {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Ford</td>
-            <td>Fusion Hybrid</td>
-            <td>2017</td>
-            <td>blue</td>
-            <td>23000</td>
-          </tr>
+          {this.props.cars.map(car => <tr>
+            <td>{car.make}</td>
+            <td>{car.model}</td>
+            <td>{car.year}</td>
+            <td>{car.color}</td>
+            <td>{car.price}</td>
+          </tr>)}
         </tbody>
       </table>
     </div>;
