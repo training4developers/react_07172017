@@ -10,6 +10,44 @@
 
 <body>
   <main class="container-fluid"></main>
+
+  <!-- <script>
+
+    'use strict';
+
+    // call-site this
+    function doIt() {
+      console.log(this);
+    }
+
+    doIt();
+    window.doIt();
+
+    const o = {
+      id: 2,
+      doIt: doIt,
+      anotherFn: function() { console.log('another fn'); },
+    };
+
+    o.doIt();
+
+    function bindMe(fnToBind, valueOfThis) {
+      return function(...params) {
+        fnToBind.call(valueOfThis, ...params);
+      }
+    }
+
+    // can't do this
+    doIt(valueOfThis)
+
+    const fn = o.doIt.bind(o);
+
+    console.log(doIt === o.doIt);
+
+    setTimeout(o.doIt, 2000);
+
+</script> -->
+
 </body>
 
 </html>

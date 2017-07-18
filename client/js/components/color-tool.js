@@ -9,15 +9,17 @@ export class ColorTool extends React.Component {
       newColor: '',
     };
 
-    this.onChange = this.onChange.bind(this);
+    // people forget to do this all of the time
+    // this.onChange = this.onChange.bind(this);
   }
 
-  onChange(e) {
-    console.log(e.currentTarget.value);
+  // class arrow function
+  onChange = (e) => {
+    //console.log(e.currentTarget.value);
     this.setState({
-      newColor: e.currentTarget.value,
+      [ e.currentTarget.name ]: e.currentTarget.value,
     });
-  }
+  };
 
   render() {
 
