@@ -6,20 +6,25 @@ export class ColorTool extends React.Component {
     super(props);
 
     this.state = {
+      colors: props.colors.slice(0),
       newColor: '',
     };
-
-    // people forget to do this all of the time
-    // this.onChange = this.onChange.bind(this);
   }
 
-  // class arrow function
   onChange = (e) => {
-    //console.log(e.currentTarget.value);
     this.setState({
       [ e.currentTarget.name ]: e.currentTarget.value,
     });
   };
+
+  onClick = () => {
+    this.setState({
+      // immutable programming to produce a new array
+      // instead of mutating the original array
+      colors: this.state.colors.concat(this.state.newColor),
+      newColor: '',
+    });
+  }
 
   render() {
 
@@ -28,7 +33,7 @@ export class ColorTool extends React.Component {
         <h1>Color Tool</h1>
       </header>
       <ul>
-        {this.props.colors.map(color => <li>{color}</li>)}
+        {this.state.colors.map(color => <li>{color}</li>)}
       </ul>
       <form>
         <div className="some-class">
@@ -37,6 +42,7 @@ export class ColorTool extends React.Component {
           <input type="text" id="new-color-input" name="newColor"
             value={this.state.newColor} onChange={this.onChange} />
         </div>
+        <button type="button" onClick={this.onClick}>Add Color</button>
       </form>
     </div>;
   }
