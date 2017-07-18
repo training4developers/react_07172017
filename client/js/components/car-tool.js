@@ -33,3 +33,13 @@ export class CarTool extends React.Component {
   }
 }
 
+// <table>
+//   <tr>
+//     {Object.keys(this.props.cars[0]).map(key => <th>{key.toUpperCase()}</th>)}
+//   </tr>
+//   {this.props.cars.map(car => <tr>
+//     {Object.keys(car).map(key => <td>{car[key]}</td>)}
+//   </tr>)}
+// </table>
+
+
