@@ -1,13 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { BaseForm } from './base-form';
 
 export class CarEditRow extends BaseForm {
 
+  propTypes = {
+    onSaveCar: PropTypes.func.isRequired,
+    onCancelCar: PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
 
     this.state = Object.assign({}, props.car);
+    //this.state = { ...props.car };
   }
 
   saveCar = () => {
