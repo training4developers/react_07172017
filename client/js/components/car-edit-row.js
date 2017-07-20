@@ -13,8 +13,8 @@ export class CarEditRow extends BaseForm {
   constructor(props) {
     super(props);
 
-    this.state = Object.assign({}, props.car);
-    //this.state = { ...props.car };
+    //this.state = Object.assign({}, props.car);
+    this.state = { ...props.car };
   }
 
   saveCar = () => {

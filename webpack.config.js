@@ -82,6 +82,8 @@ const webpackConfig = {
                 'transform-class-properties',
                 // enable support for do expressions
                 'transform-do-expressions',
+                // enable object rest and spread operator
+                'transform-object-rest-spread'
               ]
             }
           }
