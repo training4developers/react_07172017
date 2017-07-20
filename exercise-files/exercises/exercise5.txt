@@ -1,0 +1,11 @@
+Exercise 5
+
+1. Add a form to the CarTool to collect the following data
+
+Make - string
+Model - string
+Year - number
+Color - string
+Price - number
+
+2. When you are done, raise your hand.

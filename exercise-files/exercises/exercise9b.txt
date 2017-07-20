@@ -1,0 +1,9 @@
+Exercise 9b
+
+1. Add a 'Delete' button to the car row.
+
+2. When the delete button is clicked, remove the car from the array of cars.
+
+3. Ensure the car table is updated appropriately.
+
+4. Raise you are hand done.

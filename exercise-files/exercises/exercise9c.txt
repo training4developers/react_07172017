@@ -1,0 +1,9 @@
+Exercise 9c
+
+1. Add an 'Edit' button to the Car Table Row
+
+2. When the 'Edit' is clicked, the row on which the edit button was clicked should change to all input fields.
+
+3. When a row is in edit mode, it should display 'Save' and 'Cancel' buttons. The 'Edit' and 'Delete' buttons should disappear.
+
+4. Raise your hand when done.

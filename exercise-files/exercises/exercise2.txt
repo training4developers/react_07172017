@@ -1,0 +1,14 @@
+Exercise #2
+
+1. Add the car table to the CarTool component.
+
+2. Columns:
+Make
+Model
+Year
+Color
+Price
+
+3. Add two rows of car data
+
+4. Raise your hand when done.

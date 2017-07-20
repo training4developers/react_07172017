@@ -1,0 +1,7 @@
+Exercise 7A
+
+1. Move ToolHeader to it's own component, and allow the header text to be set via props
+
+2. Utlize ToolHeader in CarTool
+
+3. Raise your hand

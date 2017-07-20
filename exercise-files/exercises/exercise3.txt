@@ -1,0 +1,7 @@
+Exercise 3
+
+1. Create an array of car objects.
+
+2. Display the array of car objects inside the "tbody" of the render function.
+
+3. Raise you hand when done.

@@ -1,0 +1,7 @@
+Exercise 1
+
+1. Create a new component named Car Tool. Add the component to the component's folder.
+
+2. Display a header similar to Color Tool and export the component.
+
+3. Import the component into app.js, and view the component in the web browser.

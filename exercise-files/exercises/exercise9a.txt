@@ -1,0 +1,5 @@
+Exercise 9a
+
+1. Please convert ToolHeader and TableRow to stateless components.
+
+2. Raise your hand when you are done.

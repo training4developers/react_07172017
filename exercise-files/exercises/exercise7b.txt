@@ -1,0 +1,7 @@
+Exercise 7B
+
+1. Move the table of cars to its own component.
+
+2. Move each car row to its own component
+
+3. Raise your hand when done.

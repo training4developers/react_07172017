@@ -1,0 +1,7 @@
+Exercise 6
+
+1. Add a button to the form, to add the car to the array of cars
+
+2. Ensure the car table is updated, and the input fields are blanked out
+
+3. Raise your hand when done.
