@@ -1,20 +1,14 @@
 import React from 'react';
 
-export class CarEditRow extends React.Component {
+import { BaseForm } from './base-form';
+
+export class CarEditRow extends BaseForm {
 
   constructor(props) {
     super(props);
 
     this.state = Object.assign({}, props.car);
   }
-
-  onChange = e => {
-    this.setState({
-      [ e.currentTarget.name ]: e.currentTarget.type === 'number'
-        ? Number(e.currentTarget.value)
-        : e.currentTarget.value, 
-    });
-  };  
 
   saveCar = () => {
     this.props.onSaveCar(Object.assign({}, this.state));

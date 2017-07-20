@@ -1,6 +1,8 @@
 import React from 'react';
 
-export class CarForm extends React.Component {
+import { BaseForm } from './base-form';
+
+export class CarForm extends BaseForm {
 
   constructor(props) {
     super(props);
@@ -14,14 +16,6 @@ export class CarForm extends React.Component {
     };    
   }
 
-  onChange = e => {
-    this.setState({
-      [ e.currentTarget.name ]: e.currentTarget.type === 'number'
-        ? Number(e.currentTarget.value)
-        : e.currentTarget.value, 
-    });
-  };  
-  
   onClick = () => {
     
     this.props.onSaveCar({

@@ -17,13 +17,22 @@ export class CarTable extends React.Component {
         </tr>
       </thead>
       <tbody>
-        {this.props.cars.map(car =>
-          car.id === this.props.editCarId
-            ? <CarEditRow car={car} onSaveCar={this.props.onSaveCar} onCancelCar={this.props.onCancelCar} />
-            : <CarRow car={car} onEditCar={this.props.onEditCar} onDeleteCar={this.props.onDeleteCar} />
-        )}
+        {this.props.cars.map(car => do {
+          if (car.id === this.props.editCarId)
+            <CarEditRow car={car} onSaveCar={this.props.onSaveCar} onCancelCar={this.props.onCancelCar} />
+          else
+            <CarRow car={car} onEditCar={this.props.onEditCar} onDeleteCar={this.props.onDeleteCar} />
+        })}
       </tbody>
     </table>;
   }
 
 }
+
+// <tbody>
+//   {this.props.cars.map(car =>
+//     car.id === this.props.editCarId
+//       ? <CarEditRow car={car} onSaveCar={this.props.onSaveCar} onCancelCar={this.props.onCancelCar} />
+//       : <CarRow car={car} onEditCar={this.props.onEditCar} onDeleteCar={this.props.onDeleteCar} />
+//   )}
+// </tbody>
