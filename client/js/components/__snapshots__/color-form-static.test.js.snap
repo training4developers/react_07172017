@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ColorForm /> Enzyme Static HTML <ColorForm /> renders 1`] = `"\\"<form><div class=\\\\\\"some-class\\\\\\"><label for=\\\\\\"new-color-input\\\\\\">New Color:</label><input type=\\\\\\"text\\\\\\" id=\\\\\\"new-color-input\\\\\\" name=\\\\\\"newColor\\\\\\" value=\\\\\\"\\\\\\"></div><button type=\\\\\\"button\\\\\\">Add Color</button></form>\\""`;
+
+exports[`<ColorForm /> React Test Renderer Static HTML <ColorForm /> renders 1`] = `
+<form>
+  <div
+    className="some-class"
+  >
+    <label
+      htmlFor="new-color-input"
+    >
+      New Color:
+    </label>
+    <input
+      id="new-color-input"
+      name="newColor"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Add Color
+  </button>
+</form>
+`;

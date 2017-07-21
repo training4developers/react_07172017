@@ -1,12 +1,10 @@
 import React from 'react';
-
 import ShallowRenderer from 'react-test-renderer/shallow';
-
 import { shallow } from 'enzyme';
 
 import { HelloWorld } from './hello-world';
 
-//jest.unmock('./hello-world');
+jest.unmock('./hello-world');
 
 describe('<HelloWorld /> Shallow with React Test Renderer', () => {
 
