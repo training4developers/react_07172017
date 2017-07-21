@@ -76,10 +76,37 @@ class First extends React.Component {
 
   onClick = () => {
     //this.state.nums.push(this.state.nums.length + 1);
-    this.setState({
-      clickCount: this.state.clickCount + 1,
-      nums: this.state.nums.concat(this.state.nums.length + 1),
+
+    console.log('old click count:', this.state.clickCount);
+
+    //let cc = this.state.clickCount;
+
+    this.setState((prevState) => {
+      console.log(prevState);
+      return {
+        clickCount: prevState.clickCount + 1,
+        nums: prevState.nums.concat(prevState.nums.length + 1),
+      };
+    }, () => {
+      console.log('set state called 1');
+      console.log('new click count:', this.state.clickCount);
     });
+
+    this.setState((prevState) => {
+      console.log(prevState);
+      return {
+        clickCount: prevState.clickCount + 1,
+        nums: prevState.nums.concat(prevState.nums.length + 1),
+      };
+    }, () => {
+      console.log('set state called 2');
+      console.log('new click count:', this.state.clickCount);
+    });
+
+    //this.state = Object.assign({}, firstCallToSetState, secondCallToSetState);
+
+
+    ///console.log('new (supposed) click count:', this.state.clickCount);
   }
 
   onClick2 = () => {
