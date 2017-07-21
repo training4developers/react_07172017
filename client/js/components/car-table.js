@@ -19,9 +19,9 @@ export class CarTable extends React.Component {
       <tbody>
         {this.props.cars.map(car => do {
           if (car.id === this.props.editCarId)
-            <CarEditRow car={car} onSaveCar={this.props.onSaveCar} onCancelCar={this.props.onCancelCar} />
+            <CarEditRow key={car.id} car={car} onSaveCar={this.props.onSaveCar} onCancelCar={this.props.onCancelCar} />
           else
-            <CarRow car={car} onEditCar={this.props.onEditCar} onDeleteCar={this.props.onDeleteCar} />
+            <CarRow key={car.id} car={car} onEditCar={this.props.onEditCar} onDeleteCar={this.props.onDeleteCar} />
         })}
       </tbody>
     </table>;

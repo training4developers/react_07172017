@@ -14,6 +14,20 @@ export class ColorTool extends React.Component {
     };
   }
 
+  componentDidMount() {
+
+    // setTimeout(() => {
+
+    //   this.setState({
+    //     colors: this.state.colors.slice(0,1).concat(this.state.colors.slice(2)),
+    //   });
+
+    // }, 4000);  
+
+  }
+
+  
+
   onChange = (e) => {
     this.setState({
       [ e.currentTarget.name ]: e.currentTarget.value,
@@ -28,7 +42,10 @@ export class ColorTool extends React.Component {
 
   render() {
 
+    const randomText = '<b>JavaScript is cool!</b>';
+
     return <div>
+      <span dangerouslySetInnerHTML={{ __html: randomText }} />
       <ToolHeader headerText="Color Tool" />
       <UnorderedList items={this.state.colors} />
       <ColorForm onSaveColor={this.onClick} />

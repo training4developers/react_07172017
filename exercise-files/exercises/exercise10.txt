@@ -1,0 +1,6 @@
+Exercise 10
+
+1. Add a snapshot test for tool header. Pick one approach, Test Renderer or Enzyme. I recommend
+test renderer.
+
+2. Raise hand when done.
