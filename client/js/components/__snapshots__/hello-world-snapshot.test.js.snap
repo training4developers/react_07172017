@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`<HelloWorld /> Snapshot <HelloWorld /> renders 1`] = `
 <h1>
   Hello World!
 </h1>

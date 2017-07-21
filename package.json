@@ -38,9 +38,11 @@
     "jest-environment-node-debug": "2.0.0",
     "json-server": "0.11.2",
     "nodemon": "1.11.0",
+    "react-addons-test-utils": "15.6.0",
     "react-test-renderer": "15.6.1",
     "rimraf": "2.5.3",
     "sass-lint": "1.10.2",
+    "sinon": "2.3.8",
     "webpack-dev-server": "2.4.2"
   },
   "dependencies": {
@@ -106,7 +108,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "jest": {
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "collectCoverageFrom": [
       "client/**/*.js",
       "server/**/*.js"
@@ -118,7 +120,23 @@
         "lines": 90,
         "statements": 90
       }
-    }
+    },
+    "unmockedModulePathPatterns": [
+      "react",
+      "react-dom",
+      "react-addons-test-utils",
+      "fbjs",
+      "enzyme",
+      "cheerio",
+      "htmlparser2",
+      "underscore",
+      "lodash",
+      "domhandler",
+      "object.assign",
+      "define-properties",
+      "function-bind",
+      "object-keys"
+    ]
   },
   "devServer": {
     "contentBase": "client-dist",
