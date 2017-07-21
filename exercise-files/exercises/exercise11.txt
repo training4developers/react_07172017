@@ -1,0 +1,14 @@
+Exercise 11
+
+1. Convert the table to be a pure component
+
+2. Implemented some code that tells you in the
+console when the table's render function is being execute.
+
+3. Add a componentDidMount function to Car Tool, and wire up a setTimeout which calls setState
+
+4. When setState is called, change a property on the state which is NOT passed into the table and
+verify the table's render function does not execute.
+
+5. To check you work, and a console.log to the form component, and it should re-render because
+it will not be a pure component.
